@@ -22,9 +22,7 @@ class Security {
         this.access3.position(100,290);
         this.access3.style('background', 'white');  
 
-        this.button3 = createButton('Check');
-        this.button3.position(100,320);
-        this.button3.style('background', 'lightgrey'); 
+        
     }
 
     display(){
@@ -45,12 +43,7 @@ class Security {
             }
         });
 
-        this.button3.mousePressed(() => {
-            if(system.authenticate(accessCode3,this.access3.value())){
-                this.button3.hide();
-                this.access3.hide();
-                score++;
-            }
+        
         });
 
     }
